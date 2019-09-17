@@ -1,108 +1,365 @@
 <div class="main-bg">
-    <!-- <p class="profile-title">Profile Picture</p> -->
-  </div>
-  
-  <!-- <ion-button class="arrow-btn" (click)="goBack()">
-    <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-  </ion-button> -->
-  
-  <ion-back-button class="arrow-btn" text="" defaultHref="/user-home"></ion-back-button>
-  
   <ion-card class="specialty">
-    <p style="text-align: center;">Health and Wellness Providers</p>
+    <p style="text-align: center;">Specialty</p>
+    <ion-icon ios="ios-close" md="md-close" class="close-btn" ion-button (click)="closeModal()"></ion-icon>
   </ion-card>
-  
-  <ion-content>
-      <ion-item (click)="closeModal()">
-        <ion-label>Acupuncture</ion-label>
-      </ion-item>
-        <!-- <ion-select-option>Acupuncture</ion-select-option>
-        <ion-select-option>Allergy</ion-select-option>
-        <ion-select-option>Allergy and Immunology</ion-select-option>
-        <ion-select-option>Pediatric Allergy and Immunology</ion-select-option>
-        <ion-select-option>Anesthesia</ion-select-option>
-        <ion-select-option>Audiology</ion-select-option>
-        <ion-select-option>Cardiology</ion-select-option>
-        <ion-select-option>Interventional Cardiology</ion-select-option>
-        <ion-select-option>Pediatric Cardiology</ion-select-option>
-        <ion-select-option>Head and Neck Surgery</ion-select-option>
-        <ion-select-option>Back Surgery</ion-select-option>
-        <ion-select-option>Burns Surgery</ion-select-option>
-        <ion-select-option>General Surgery</ion-select-option>
-        <ion-select-option>Mohs Micrographic Surgery</ion-select-option>
-        <ion-select-option>Surgery or Peripheral Vascular Illness</ion-select-option>
-        <ion-select-option>Oncological Surgery</ion-select-option>
-        <ion-select-option>Oral Surgery</ion-select-option>
-        <ion-select-option>Orthopedic Surgery</ion-select-option>
-        <ion-select-option>Pediatric Surgery</ion-select-option>
-        <ion-select-option>Plastic Surgery</ion-select-option>
-        <ion-select-option>Hands Plastic Surgery</ion-select-option>
-        <ion-select-option>Thoracic Surgery</ion-select-option>
-        <ion-select-option>Pediatric Critical Care</ion-select-option>
-        <ion-select-option>Dentist</ion-select-option>
-        <ion-select-option>Pediatric Dentist</ion-select-option>
-        <ion-select-option>Dermatology</ion-select-option>
-        <ion-select-option>Endocrinology</ion-select-option>
-        <ion-select-option>Pediatric Endocrinology</ion-select-option>
-        <ion-select-option>Endodontics</ion-select-option>
-        <ion-select-option>Physiatry</ion-select-option>
-        <ion-select-option>Pediatric Physiatry</ion-select-option>
-        <ion-select-option>Physiatry and Rehabilitation</ion-select-option>
-        <ion-select-option>Spinal Cord Physiatry and Rehabilitation</ion-select-option>
-        <ion-select-option>Gastroenterology</ion-select-option>
-        <ion-select-option>Pediatric Gastroenterology</ion-select-option>
-        <ion-select-option>General Practitioner</ion-select-option>
-        <ion-select-option>Geriatrics</ion-select-option>
-        <ion-select-option>Gynecology</ion-select-option>
-        <ion-select-option>Oncologic Gynecology</ion-select-option>
-        <ion-select-option>Glaucoma</ion-select-option>
-        <ion-select-option>Hematology</ion-select-option>
-        <ion-select-option>Pediatric Hematology and Oncology</ion-select-option>
-        <ion-select-option>Oncology Hematology</ion-select-option>
-        <ion-select-option>Laboratories</ion-select-option>
-        <ion-select-option>Pain Management</ion-select-option>
-        <ion-select-option>Maxilofacial</ion-select-option>
-        <ion-select-option>Critical Care Medicine</ion-select-option>
-        <ion-select-option>Family Medicine</ion-select-option>
-        <ion-select-option>Sports Medicine</ion-select-option>
-        <ion-select-option>General Medicine</ion-select-option>
-        <ion-select-option>Internal Medicine</ion-select-option>
-        <ion-select-option>Neonatal and Perinatal Medicine</ion-select-option>
-        <ion-select-option>Nuclear Medicine</ion-select-option>
-        <ion-select-option>Occupational Medicine</ion-select-option>
-        <ion-select-option>Nephrology</ion-select-option>
-        <ion-select-option>Pneumology</ion-select-option>
-        <ion-select-option>Pediatric Pneumology</ion-select-option>
-        <ion-select-option>Neurosurgery</ion-select-option>
-        <ion-select-option>Neurophysiology</ion-select-option>
-        <ion-select-option>Neuroophtalmology</ion-select-option>
-        <ion-select-option>Neurology</ion-select-option>
-        <ion-select-option>Pediatric Neurology</ion-select-option>
-        <ion-select-option>Nutrition</ion-select-option>
-        <ion-select-option>Obstetric and gynecology</ion-select-option>
-        <ion-select-option>Pediatric Odontology</ion-select-option>
-        <ion-select-option>Orthodontics</ion-select-option>
-        <ion-select-option>Ophthalmology</ion-select-option>
-        <ion-select-option>Ear Nose and Throat</ion-select-option>
-        <ion-select-option>Oncology</ion-select-option>
-        <ion-select-option>Optometry</ion-select-option>
-        <ion-select-option>Orthopedics</ion-select-option>
-        <ion-select-option>Pediatric Orthopedics</ion-select-option>
-        <ion-select-option>Pediatry</ion-select-option>
-        <ion-select-option>Periodontics</ion-select-option>
-        <ion-select-option>Podiatrics</ion-select-option>
-        <ion-select-option>Proctology</ion-select-option>
-        <ion-select-option>Prosthodontics</ion-select-option>
-        <ion-select-option>Psychology</ion-select-option>
-        <ion-select-option>Psychiatric</ion-select-option>
-        <ion-select-option>Pediatric Psychiatrics</ion-select-option>
-        <ion-select-option>Geriatric Psychiatrics</ion-select-option>
-        <ion-select-option>Chiropractic</ion-select-option>
-        <ion-select-option>Radiology</ion-select-option>
-        <ion-select-option>Retinology</ion-select-option>
-        <ion-select-option>Physical Therapy</ion-select-option>
-        <ion-select-option>Urology</ion-select-option>
-        <ion-select-option>Pediatric Urology</ion-select-option> -->
 
-  
-  </ion-content>
+</div>
+
+<ion-content>
+  <ion-card style="box-shadow: none;">
+    <ion-list>
+      <ion-radio-group>
+        <ion-item lines="full">
+          <ion-label>Acupuncture</ion-label>
+          <ion-radio checked value="Acupuncture"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label>Allergy</ion-label>
+          <ion-radio value="Allergy"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label>Allergy and Immunology</ion-label>
+          <ion-radio value="Allergy and Immunology"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label>Anesthesia</ion-label>
+          <ion-radio value="Anesthesia"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label>Audiology</ion-label>
+          <ion-radio value="Audiology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Back Surgery</ion-label>
+          <ion-radio value="Back Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Cardiology</ion-label>
+          <ion-radio value="Cardiology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Chiropractic</ion-label>
+          <ion-radio value="Chiropractic"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Critical Care Medicine</ion-label>
+          <ion-radio value="Critical Care Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Dentist</ion-label>
+          <ion-radio value="Dentist"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Dermatology</ion-label>
+          <ion-radio value="Dermatology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Ear Nose and Throat</ion-label>
+          <ion-radio value="Ear Nose and Throat"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Endocrinology</ion-label>
+          <ion-radio value="Endocrinology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Endodontics</ion-label>
+          <ion-radio value="Endodontics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Family Medicine</ion-label>
+          <ion-radio value="Family Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Gastroenterology</ion-label>
+          <ion-radio value="Gastroenterology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>General Medicine</ion-label>
+          <ion-radio value="General Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>General Practitioner</ion-label>
+          <ion-radio value="General Practitioner"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>General Surgery</ion-label>
+          <ion-radio value="General Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Geriatric Psychiatrics</ion-label>
+          <ion-radio value="Geriatric Psychiatrics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Geriatrics</ion-label>
+          <ion-radio value="Geriatrics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Glaucoma</ion-label>
+          <ion-radio value="Glaucoma"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Gynecology</ion-label>
+          <ion-radio value="Gynecology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Hands Plastic Surgery</ion-label>
+          <ion-radio value="Hands Plastic Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Head and Neck Surgery</ion-label>
+          <ion-radio value="sHead and Neck Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Hematology</ion-label>
+          <ion-radio value="Hematology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Internal Medicine</ion-label>
+          <ion-radio value="Internal Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Interventional Cardiology</ion-label>
+          <ion-radio value="Interventional Cardiology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Laboratories</ion-label>
+          <ion-radio value="Laboratories"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Maxilofacial</ion-label>
+          <ion-radio value="Maxilofacial"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Mohs Micrographic Surgery</ion-label>
+          <ion-radio value="Mohs Micrographic Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Neonatal and Perinatal Medicine</ion-label>
+          <ion-radio value="Neonatal and Perinatal Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Nephrology</ion-label>
+          <ion-radio value="Nephrology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Neurology</ion-label>
+          <ion-radio value="Neurology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Neuroophtalmology</ion-label>
+          <ion-radio value="Neuroophtalmology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Neurophysiology</ion-label>
+          <ion-radio value="Neurophysiology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Neurosurgery</ion-label>
+          <ion-radio value="Neurosurgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Nuclear Medicine</ion-label>
+          <ion-radio value="Nuclear Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Nutrition</ion-label>
+          <ion-radio value="Nutrition"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Obstetric and gynecology</ion-label>
+          <ion-radio value="Obstetric and gynecology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Occupational Medicine</ion-label>
+          <ion-radio value="Occupational Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Oncologic Gynecology</ion-label>
+          <ion-radio value="Oncologic Gynecology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Oncological Surgery</ion-label>
+          <ion-radio value="Oncological Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Oncology</ion-label>
+          <ion-radio value="Oncology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Oncology Hematology</ion-label>
+          <ion-radio value="Oncology Hematology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Ophthalmology</ion-label>
+          <ion-radio value="Ophthalmology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Optometry</ion-label>
+          <ion-radio value="Optometry"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Oral Surgery</ion-label>
+          <ion-radio value="Oral Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Orthodontics</ion-label>
+          <ion-radio value="Orthodontics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Orthopedic Surgery</ion-label>
+          <ion-radio value="Oncological Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Orthopedics</ion-label>
+          <ion-radio value="Orthopedics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pain Management</ion-label>
+          <ion-radio value="Pain Management"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Allergy and Immunology</ion-label>
+          <ion-radio value="Pediatric Allergy and Immunology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Cardiology</ion-label>
+          <ion-radio value="Pediatric Cardiology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Critical Care</ion-label>
+          <ion-radio value="Pediatric Critical Care"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Dentist</ion-label>
+          <ion-radio value="Pediatric Dentist"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Endocrinology</ion-label>
+          <ion-radio value="Pediatric Endocrinology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Gastroenterology</ion-label>
+          <ion-radio value="Pediatric Gastroenterology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Hematology and Oncology</ion-label>
+          <ion-radio value="Pediatric Hematology and Oncology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Neurology</ion-label>
+          <ion-radio value="Pediatric Neurology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Odontology</ion-label>
+          <ion-radio value="Pediatric Odontology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Orthopedics</ion-label>
+          <ion-radio value="Pediatric Orthopedics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Physiatry</ion-label>
+          <ion-radio value="Pediatric Physiatry"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Pneumology</ion-label>
+          <ion-radio value="Pediatric Pneumology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Psychiatrics</ion-label>
+          <ion-radio value="Pediatric Psychiatrics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Surgery</ion-label>
+          <ion-radio value="Pediatric Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatric Urology</ion-label>
+          <ion-radio value="Pediatric Urology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pediatry</ion-label>
+          <ion-radio value="Pediatry"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Periodontics</ion-label>
+          <ion-radio value="Periodontics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Physiatry</ion-label>
+          <ion-radio value="Physiatry"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Physiatry and Rehabilitation</ion-label>
+          <ion-radio value="Physiatry and Rehabilitation"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Physical Therapy</ion-label>
+          <ion-radio value="Physical Therapy"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Plastic Surgery</ion-label>
+          <ion-radio value="Plastic Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Pneumology</ion-label>
+          <ion-radio value="Pneumology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Podiatrics</ion-label>
+          <ion-radio value="Podiatrics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Proctology</ion-label>
+          <ion-radio value="Proctology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Prosthodontics</ion-label>
+          <ion-radio value="Prosthodontics"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Psychiatric</ion-label>
+          <ion-radio value="Psychiatric"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Psychology</ion-label>
+          <ion-radio value="Psychology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Radiology</ion-label>
+          <ion-radio value="Radiology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Retinology</ion-label>
+          <ion-radio value="Retinology"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Spinal Cord Physiatry and Rehabilitation</ion-label>
+          <ion-radio value="Spinal Cord Physiatry and Rehabilitation"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Sports Medicine</ion-label>
+          <ion-radio value="Sports Medicine"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Surgery or Peripheral Vascular Illness</ion-label>
+          <ion-radio value="Surgery or Peripheral Vascular Illness"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Thoracic Surgery</ion-label>
+          <ion-radio value="Thoracic Surgery"></ion-radio>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Urology</ion-label>
+          <ion-radio value="Urology"></ion-radio>
+        </ion-item>
+
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+</ion-content>

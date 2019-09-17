@@ -2,15 +2,11 @@
   <p class="doctors-title">Check-in</p>
 </div>
 
-<!-- <ion-button class="arrow-btn" (click)="goBack()">
-  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-</ion-button> -->
-
 <ion-back-button class="arrow-btn" text="" defaultHref="/check-in"></ion-back-button>
 
 
-<ion-content>
-  <ion-card style="box-shadow: none;">
+<ion-content scrollY="false">
+  <ion-card style="box-shadow: none; margin-top: 0;">
     <ion-avatar class="avatar-size">
       <ion-img class="image-doc" src="assets/happydoctor.jpg"></ion-img>
     </ion-avatar>
@@ -27,7 +23,8 @@
       <ion-icon class="star" name="star-outline"></ion-icon>5.0 <span class="total-reviews">(234 reviewer)</span>
     </p>
 
-    <ion-card style="margin-left: 20px; margin-right: 20px; padding-top: 10px; padding-bottom: 10px;">
+    <ion-card
+      style="margin-top: 10px; margin-left: 20px; margin-right: 20px; padding-top: 10px; padding-bottom: 10px; margin-bottom: 0;">
       <ion-grid>
         <ion-row>
           <ion-col size="1" class="icon">
@@ -41,7 +38,7 @@
       </ion-grid>
     </ion-card>
 
-    <ion-card style="margin-left: 20px; margin-right: 20px; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+    <ion-card style="margin-top: 10px; margin-left: 20px; margin-right: 20px; padding-top: 10px; padding-bottom: 10px;">
       <ion-grid>
         <ion-row>
           <ion-col size="1" class="icon">
@@ -63,9 +60,9 @@
 
     <ion-button (click)="presentAlertConfirm()" class="confirm-btn" expand="block">CANCEL</ion-button>
 
-<ion-card ion-button routerLink="/user-home" class="go-btn">
-    <img  src="assets/stetho.png" width="40px" height="40px" style="object-fit: contain; margin-top: 20px;">
-</ion-card>
+    <ion-card ion-button routerLink="/user-home" class="go-btn">
+      <img src="assets/stetho.png" width="40px" height="40px" style="object-fit: contain; margin-top: 20px;">
+    </ion-card>
 
     <!-- <img ion-button class="go-btn" (click)="openPage3()" src="assets/stetho.png" width="40px" height="40px" style="object-fit: contain;"> -->
   </ion-card>

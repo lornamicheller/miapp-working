@@ -1,0 +1,39 @@
+.main-bg {
+    background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+    height: 100px;
+}
+
+
+.specialty {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: none;
+    position: absolute;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 35px;
+}
+
+ion-radio {
+    width: 25px;
+    height: 25px;
+    --color-checked: #93278f;
+}
+
+ion-label {
+    font-size: 13px;
+    color: grey;
+}

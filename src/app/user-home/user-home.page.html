@@ -1,75 +1,79 @@
 <ion-card class="main-bg">
-    <ion-toolbar class="bg">
-      <ion-buttons slot="start">
-        <ion-button routerLink="/account" (click)="openProfile()" class="profile-btn">
-          <ion-icon class="user-icon" ios="ios-person" md="md-person"></ion-icon>
-        </ion-button>
-      </ion-buttons>
+  <ion-toolbar class="bg">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/account" (click)="openProfile()" class="profile-btn">
+        <ion-icon class="user-icon" ios="ios-person" md="md-person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-      <div class="logo-bell">
-        <ion-img class="logo" src="assets/logomiaapp.svg"></ion-img>
-        <ion-button routerLink="/notification" class="bell">
-          <ion-icon class="bell-icon" ios="ios-notifications-outline" md="md-notifications-outline"></ion-icon>
-        </ion-button>
-      </div>
-    </ion-toolbar>
-  </ion-card>
-<ion-content>
+    <div class="logo-bell">
+      <ion-img class="logo" src="assets/logomiaapp.svg"></ion-img>
+      <ion-button routerLink="/notification" class="bell">
+        <ion-icon class="bell-icon" ios="ios-notifications-outline" md="md-notifications-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-card>
+<ion-content scrollY="false">
 
   <ion-card class="wrapper">
     <p class="welcome">Hello <span>Melanie</span>,</p>
     <p class="what-service">WHAT ARE YOU LOOKING FOR?</p>
 
-    <ion-button routerLink="/specialty" class="book-app" expand="block">
-      <ion-grid style="margin: 0; padding: 0;">
-        <ion-row>
-          <ion-col size="2">
-            <ion-img class="img" src="assets/doc-icon-1.png"></ion-img>
-          </ion-col>
-          <ion-col size="10" class="text">
-            Book Appointment
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-button>
+    <ion-card style="margin-top: 0; box-shadow: none; background: transparent;">
 
-    <ion-button routerLink="/view-appointment" class="view-app" expand="block">
-      <ion-grid style="margin: 0; padding: 0;">
-        <ion-row>
-          <ion-col size="2">
-            <ion-img class="img" src="assets/calendar.png"></ion-img>
-          </ion-col>
-          <ion-col size="10" class="text">
-            View Appointment
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-button>
+      <ion-button routerLink="/specialty" class="book-app" expand="block">
+        <ion-grid style="margin: 0; padding: 0;">
+          <ion-row>
+            <ion-col size="2">
+              <ion-img class="img" src="assets/doc-icon-1.png"></ion-img>
+            </ion-col>
+            <ion-col size="10" class="text">
+              Book Appointment
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-button>
 
-    <ion-button routerLink="/manage" class="manage-app" expand="block">
-      <ion-grid style="margin: 0; padding: 0;">
-        <ion-row>
-          <ion-col size="2">
-            <ion-img class="img" src="assets/edit-app-2.png"></ion-img>
-          </ion-col>
-          <ion-col size="10" class="text-2">
-            Manage <br>Appointment
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-button>
+      <ion-button routerLink="/view-appointment" class="view-app" expand="block">
+        <ion-grid style="margin: 0; padding: 0;">
+          <ion-row>
+            <ion-col size="2">
+              <ion-img class="img" src="assets/calendar.png"></ion-img>
+            </ion-col>
+            <ion-col size="10" class="text">
+              View Appointment
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-button>
 
-    <ion-button routerLink="/check-in" class="check-in" expand="block">
-      <ion-grid style="margin: 0; padding: 0;">
-        <ion-row>
-          <ion-col size="2">
-            <ion-img class="img" src="assets/checkin (1).png"></ion-img>
-          </ion-col>
-          <ion-col size="10" class="text">
-            Check-in
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-button>
+      <ion-button routerLink="/manage" class="manage-app" expand="block">
+        <ion-grid style="margin: 0; padding: 0;">
+          <ion-row>
+            <ion-col size="2">
+              <ion-img class="img" src="assets/edit-app-2.png"></ion-img>
+            </ion-col>
+            <ion-col size="10" class="text-2">
+              Manage <br>Appointment
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-button>
+
+      <ion-button routerLink="/check-in" class="check-in" expand="block">
+        <ion-grid style="margin: 0; padding: 0;">
+          <ion-row>
+            <ion-col size="2">
+              <ion-img class="img" src="assets/checkin (1).png"></ion-img>
+            </ion-col>
+            <ion-col size="10" class="text">
+              Check-in
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-button>
+
+    </ion-card>
   </ion-card>
 </ion-content>

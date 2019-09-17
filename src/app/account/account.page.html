@@ -6,10 +6,12 @@
   <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
 </ion-button> -->
 
-<ion-back-button class="arrow-btn" text="" defaultHref="/home-user"></ion-back-button>
+<!-- <ion-back-button (click)="goBack()" class="arrow-btn" text="" defaultHref="/home-user"></ion-back-button> -->
+
+<ion-icon (click)="goBack()" class="arrow-btn" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
 
 
-<ion-content>
+<ion-content scrollY="false">
 
   <ion-grid>
     <ion-row>
@@ -19,15 +21,15 @@
         </ion-avatar>
       </ion-col>
       <ion-col size="10">
-      <ion-button (click)="openPage2()" class="edit-btn">EDIT</ion-button>
+        <ion-button (click)="openPage2()" class="edit-btn">EDIT</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <p class="profile-name">MELANIE ALMEIDA</p>
-  <ion-button expand="block" class="links">FIND</ion-button>
+  <!-- <ion-button expand="block" class="links">FIND</ion-button> -->
   <ion-button expand="block" class="links-2">TERMS AND CONDITIONS</ion-button>
-  <ion-button expand="block" class="links-3">WEBSITE</ion-button>
+  <ion-button expand="block" class="links-3" (click)="openWebsite()">WEBSITE</ion-button>
 
 </ion-content>
 

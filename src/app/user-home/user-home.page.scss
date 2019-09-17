@@ -1,5 +1,5 @@
 .main-bg {
-  margin: 0; 
+  margin: 0;
   border-radius: 0;
   padding-top: 50px;
   background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
@@ -69,7 +69,7 @@
 }
 
 .book-app {
-  width: 300px;
+  // width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -78,11 +78,11 @@
   --background: #8397fc;
   --background-activated: #8397fc;
   border-radius: 25px;
-  height: 100px;
+  height: 80px;
 }
 
 .view-app {
-  width: 300px;
+  // width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -91,11 +91,13 @@
   --background: #009bdf;
   --background-activated: #009bdf;
   border-radius: 25px;
-  height: 100px;
+  // height: 100px;
+  height: 80px;
+
 }
 
 .manage-app {
-  width: 300px;
+  // width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -104,11 +106,13 @@
   --background: #9f009b;
   --background-activated: #9f009b;
   border-radius: 25px;
-  height: 100px;
+  // height: 100px;
+  height: 80px;
+
 }
 
 .check-in {
-  width: 300px;
+  // width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -117,7 +121,9 @@
   --background: #5b66c2;
   --background-activated: #5b66c2;
   border-radius: 25px;
-  height: 100px;
+  // height: 100px;
+  height: 80px;
+
 }
 
 .img {
@@ -139,4 +145,3 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
-

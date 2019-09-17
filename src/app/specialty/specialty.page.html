@@ -2,20 +2,16 @@
   <!-- <p class="profile-title">Profile Picture</p> -->
 </div>
 
-<!-- <ion-button class="arrow-btn" (click)="goBack()">
-  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-</ion-button> -->
-
 <ion-back-button class="arrow-btn" text="" defaultHref="/user-home"></ion-back-button>
 
 <ion-card class="specialty">
   <p style="text-align: center;">Health and Wellness Providers</p>
 </ion-card>
 
-<ion-content>
-  <ion-item lines="full" style="margin-top: 30px;">
+<ion-content scrollY="false">
+  <ion-item lines="full" ion-button (click)="presentModal()" style="margin-top: 30px;">
     <ion-label class="specialty-title">SELECT SPECIALTY</ion-label>
-    <ion-select class="specialty-input" slot="end" [interfaceOptions]="customPopoverOptions" interface="popover"
+    <!-- <ion-select class="specialty-input" slot="end" [interfaceOptions]="customPopoverOptions" interface="popover"
       style=" text-align: right;">
       <ion-select-option>Acupuncture</ion-select-option>
       <ion-select-option>Allergy</ion-select-option>
@@ -104,7 +100,7 @@
       <ion-select-option>Physical Therapy</ion-select-option>
       <ion-select-option>Urology</ion-select-option>
       <ion-select-option>Pediatric Urology</ion-select-option>
-    </ion-select>
+    </ion-select> -->
   </ion-item>
 
   <ion-item lines="full">
@@ -132,104 +128,104 @@
       <ion-select-option value="Triple S Advantage">Triple S Advantage</ion-select-option>
       <ion-select-option value="Triple Salud (SSS)">Triple Salud (SSS)</ion-select-option>
       <ion-select-option value="SSS Vital">SSS Vital</ion-select-option>
-      <ion-select-option value="Don't have medical insurance">Don't have medical insurance</ion-select-option>
+      <ion-select-option value="Don't have medical insurance">No Medical Insurance</ion-select-option>
     </ion-select>
   </ion-item>
 
   <ion-item lines="full">
-      <ion-label class="specialty-title">CITY</ion-label>
-    <ion-select class="specialty-input" slot="end" placeholder="" cancelText="Cancel" okText="Okay" [interfaceOptions]="customPopoverOptions" interface="popover">
-        <ion-select-option value="Adjuntas">Adjuntas</ion-select-option>
-        <ion-select-option value="Aguada">Aguada</ion-select-option>
-        <ion-select-option value="Aguadilla">Aguadilla</ion-select-option>
-        <ion-select-option value="Aguas Buenas">Aguas Buenas</ion-select-option>
-        <ion-select-option value="Aibonito">Aibonito</ion-select-option>
-        <ion-select-option value="Arecibo">Arecibo</ion-select-option>
-        <ion-select-option value="Arroyo">Arroyo</ion-select-option>
-        <ion-select-option value="Añasco">Añasco</ion-select-option>
-        <ion-select-option value="Barceloneta">Barceloneta</ion-select-option>
-        <ion-select-option value="Barranquitas">Barranquitas</ion-select-option>
-        <ion-select-option value="Bayamón">Bayamón</ion-select-option>
-        <ion-select-option value="Cabo Rojo">Cabo Rojo</ion-select-option>
-        <ion-select-option value="Caguas">Caguas</ion-select-option>
-        <ion-select-option value="Camuy">Camuy</ion-select-option>
-        <ion-select-option value="Canóvanas">Canóvanas</ion-select-option>
-        <ion-select-option value="Carolina">Carolina</ion-select-option>
-        <ion-select-option value="Cataño">Cataño</ion-select-option>
-        <ion-select-option value="Cayey">Cayey</ion-select-option>
-        <ion-select-option value="Ceiba">Ceiba</ion-select-option>
-        <ion-select-option value="Ciales">Ciales</ion-select-option>
-        <ion-select-option value="Cidra">Cidra</ion-select-option>
-        <ion-select-option value="Coamo">Coamo</ion-select-option>
-        <ion-select-option value="Comerío">Comerío</ion-select-option>
-        <ion-select-option value="Corozal">Corozal</ion-select-option>
-        <ion-select-option value="Culebra">Culebra</ion-select-option>
-        <ion-select-option value="Dorado">Dorado</ion-select-option>
-        <ion-select-option value="Fajardo">Fajardo</ion-select-option>
-        <ion-select-option value="Florida">Florida</ion-select-option>
-        <ion-select-option value="Guayama">Guayama</ion-select-option>
-        <ion-select-option value="Guayanilla">Guayanilla</ion-select-option>
-        <ion-select-option value="Guaynabo">Guaynabo</ion-select-option>
-        <ion-select-option value="Gurabo">Gurabo</ion-select-option>
-        <ion-select-option value="Guánica">Guánica</ion-select-option>
-        <ion-select-option value="Hatillo">Hatillo</ion-select-option>
-        <ion-select-option value="Hormigueros">Hormigueros</ion-select-option>
-        <ion-select-option value="Humacao">Humacao</ion-select-option>
-        <ion-select-option value="Isabella">Isabella</ion-select-option>
-        <ion-select-option value="Jayuya">Jayuya</ion-select-option>
-        <ion-select-option value="Juana Díaz">Juana Díaz</ion-select-option>
-        <ion-select-option value="Juncos">Juncos</ion-select-option>
-        <ion-select-option value="Lajas">Lajas</ion-select-option>
-        <ion-select-option value="Lares">Lares</ion-select-option>
-        <ion-select-option value="Las Marías">Las Marías</ion-select-option>
-        <ion-select-option value="Las Piedras">Las Piedras</ion-select-option>
-        <ion-select-option value="Loíza">Loíza</ion-select-option>
-        <ion-select-option value="Luquillo">Luquillo</ion-select-option>
-        <ion-select-option value="Manatí">Manatí</ion-select-option>
-        <ion-select-option value="Maricao">Maricao</ion-select-option>
-        <ion-select-option value="Maunabo">Maunabo</ion-select-option>
-        <ion-select-option value="Mayagüez">Mayagüez</ion-select-option>
-        <ion-select-option value="Moca">Moca</ion-select-option>
-        <ion-select-option value="Morovis">Morovis</ion-select-option>
-        <ion-select-option value="Naguabo">Naguabo</ion-select-option>
-        <ion-select-option value="Naranjito">Naranjito</ion-select-option>
-        <ion-select-option value="Orocovis">Orocovis</ion-select-option>
-        <ion-select-option value="Patillas">Patillas</ion-select-option>
-        <ion-select-option value="Peñuelas">Peñuelas</ion-select-option>
-        <ion-select-option value="Ponce">Ponce</ion-select-option>
-        <ion-select-option value="Quebradillas">Quebradillas</ion-select-option>
-        <ion-select-option value="Rincón">Rincón</ion-select-option>
-        <ion-select-option value="Río Grande">Río Grande</ion-select-option>
-        <ion-select-option value="Sabana Grande">Sabana Grande</ion-select-option>
-        <ion-select-option value="Salinas">Salinas</ion-select-option>
-        <ion-select-option value="San Germán">San Germán</ion-select-option>
-        <ion-select-option value="San Juan">San Juan</ion-select-option>
-        <ion-select-option value="San Lorenzo">San Lorenzo</ion-select-option>
-        <ion-select-option value="San Sebastián">San Sebastián</ion-select-option>
-        <ion-select-option value="Santa Isabel">Santa Isabel</ion-select-option>
-        <ion-select-option value="Toa Alta">Toa Alta</ion-select-option>
-        <ion-select-option value="Toa Baja">Toa Baja</ion-select-option>
-        <ion-select-option value="Trujillo Alto">Trujillo Alto</ion-select-option>
-        <ion-select-option value="Utuado">Utuado</ion-select-option>
-        <ion-select-option value="Vega Alta">Vega Alta</ion-select-option>
-        <ion-select-option value="Vega Baja">Vega Baja</ion-select-option>
-        <ion-select-option value="Vieques">Vieques</ion-select-option>
-        <ion-select-option value="Villalba">Villalba</ion-select-option>
-        <ion-select-option value="Yabucoa">Yabucoa</ion-select-option>
-        <ion-select-option value="Yauco">Yauco</ion-select-option>
-      </ion-select>
-    </ion-item>
+    <ion-label class="specialty-title">CITY (OPTIONAL)</ion-label>
+    <ion-select class="specialty-input" slot="end" placeholder="" cancelText="Cancel" okText="Okay"
+      [interfaceOptions]="customPopoverOptions" interface="popover">
+      <ion-select-option value="Adjuntas">Adjuntas</ion-select-option>
+      <ion-select-option value="Aguada">Aguada</ion-select-option>
+      <ion-select-option value="Aguadilla">Aguadilla</ion-select-option>
+      <ion-select-option value="Aguas Buenas">Aguas Buenas</ion-select-option>
+      <ion-select-option value="Aibonito">Aibonito</ion-select-option>
+      <ion-select-option value="Arecibo">Arecibo</ion-select-option>
+      <ion-select-option value="Arroyo">Arroyo</ion-select-option>
+      <ion-select-option value="Añasco">Añasco</ion-select-option>
+      <ion-select-option value="Barceloneta">Barceloneta</ion-select-option>
+      <ion-select-option value="Barranquitas">Barranquitas</ion-select-option>
+      <ion-select-option value="Bayamón">Bayamón</ion-select-option>
+      <ion-select-option value="Cabo Rojo">Cabo Rojo</ion-select-option>
+      <ion-select-option value="Caguas">Caguas</ion-select-option>
+      <ion-select-option value="Camuy">Camuy</ion-select-option>
+      <ion-select-option value="Canóvanas">Canóvanas</ion-select-option>
+      <ion-select-option value="Carolina">Carolina</ion-select-option>
+      <ion-select-option value="Cataño">Cataño</ion-select-option>
+      <ion-select-option value="Cayey">Cayey</ion-select-option>
+      <ion-select-option value="Ceiba">Ceiba</ion-select-option>
+      <ion-select-option value="Ciales">Ciales</ion-select-option>
+      <ion-select-option value="Cidra">Cidra</ion-select-option>
+      <ion-select-option value="Coamo">Coamo</ion-select-option>
+      <ion-select-option value="Comerío">Comerío</ion-select-option>
+      <ion-select-option value="Corozal">Corozal</ion-select-option>
+      <ion-select-option value="Culebra">Culebra</ion-select-option>
+      <ion-select-option value="Dorado">Dorado</ion-select-option>
+      <ion-select-option value="Fajardo">Fajardo</ion-select-option>
+      <ion-select-option value="Florida">Florida</ion-select-option>
+      <ion-select-option value="Guayama">Guayama</ion-select-option>
+      <ion-select-option value="Guayanilla">Guayanilla</ion-select-option>
+      <ion-select-option value="Guaynabo">Guaynabo</ion-select-option>
+      <ion-select-option value="Gurabo">Gurabo</ion-select-option>
+      <ion-select-option value="Guánica">Guánica</ion-select-option>
+      <ion-select-option value="Hatillo">Hatillo</ion-select-option>
+      <ion-select-option value="Hormigueros">Hormigueros</ion-select-option>
+      <ion-select-option value="Humacao">Humacao</ion-select-option>
+      <ion-select-option value="Isabella">Isabella</ion-select-option>
+      <ion-select-option value="Jayuya">Jayuya</ion-select-option>
+      <ion-select-option value="Juana Díaz">Juana Díaz</ion-select-option>
+      <ion-select-option value="Juncos">Juncos</ion-select-option>
+      <ion-select-option value="Lajas">Lajas</ion-select-option>
+      <ion-select-option value="Lares">Lares</ion-select-option>
+      <ion-select-option value="Las Marías">Las Marías</ion-select-option>
+      <ion-select-option value="Las Piedras">Las Piedras</ion-select-option>
+      <ion-select-option value="Loíza">Loíza</ion-select-option>
+      <ion-select-option value="Luquillo">Luquillo</ion-select-option>
+      <ion-select-option value="Manatí">Manatí</ion-select-option>
+      <ion-select-option value="Maricao">Maricao</ion-select-option>
+      <ion-select-option value="Maunabo">Maunabo</ion-select-option>
+      <ion-select-option value="Mayagüez">Mayagüez</ion-select-option>
+      <ion-select-option value="Moca">Moca</ion-select-option>
+      <ion-select-option value="Morovis">Morovis</ion-select-option>
+      <ion-select-option value="Naguabo">Naguabo</ion-select-option>
+      <ion-select-option value="Naranjito">Naranjito</ion-select-option>
+      <ion-select-option value="Orocovis">Orocovis</ion-select-option>
+      <ion-select-option value="Patillas">Patillas</ion-select-option>
+      <ion-select-option value="Peñuelas">Peñuelas</ion-select-option>
+      <ion-select-option value="Ponce">Ponce</ion-select-option>
+      <ion-select-option value="Quebradillas">Quebradillas</ion-select-option>
+      <ion-select-option value="Rincón">Rincón</ion-select-option>
+      <ion-select-option value="Río Grande">Río Grande</ion-select-option>
+      <ion-select-option value="Sabana Grande">Sabana Grande</ion-select-option>
+      <ion-select-option value="Salinas">Salinas</ion-select-option>
+      <ion-select-option value="San Germán">San Germán</ion-select-option>
+      <ion-select-option value="San Juan">San Juan</ion-select-option>
+      <ion-select-option value="San Lorenzo">San Lorenzo</ion-select-option>
+      <ion-select-option value="San Sebastián">San Sebastián</ion-select-option>
+      <ion-select-option value="Santa Isabel">Santa Isabel</ion-select-option>
+      <ion-select-option value="Toa Alta">Toa Alta</ion-select-option>
+      <ion-select-option value="Toa Baja">Toa Baja</ion-select-option>
+      <ion-select-option value="Trujillo Alto">Trujillo Alto</ion-select-option>
+      <ion-select-option value="Utuado">Utuado</ion-select-option>
+      <ion-select-option value="Vega Alta">Vega Alta</ion-select-option>
+      <ion-select-option value="Vega Baja">Vega Baja</ion-select-option>
+      <ion-select-option value="Vieques">Vieques</ion-select-option>
+      <ion-select-option value="Villalba">Villalba</ion-select-option>
+      <ion-select-option value="Yabucoa">Yabucoa</ion-select-option>
+      <ion-select-option value="Yauco">Yauco</ion-select-option>
+    </ion-select>
+  </ion-item>
 
   <ion-item lines="full">
     <ion-icon style="font-size: 15px" slot="start" ios="ios-search" md="md-search"></ion-icon>
-    <ion-input class="search-input" type="text" placeholder="ZIP CODE"></ion-input>
+    <ion-input class="search-input" type="text" placeholder="ZIP CODE (OPTIONAL)"></ion-input>
   </ion-item>
   <ion-item lines="full">
     <ion-icon style="font-size: 15px" slot="start" ios="ios-person" md="md-person"></ion-icon>
-    <ion-label class="specialty-title">DOCTOR'S NAME</ion-label>
-    <ion-input slot="end" style="width: 100%; text-align: right;" class="search-input" type="text" placeholder=""></ion-input>
+    <ion-input style="width: 100%;" class="search-input" type="text" placeholder="DOCTOR'S NAME (OPTIONAL)">
+    </ion-input>
   </ion-item>
-  <!-- <ion-searchbar class="search-bar" placeholder="ZIP CODE OR CITY"></ion-searchbar> -->
 
   <ion-button routerLink="/doctors" class="next-btn" expand="block">NEXT</ion-button>
 

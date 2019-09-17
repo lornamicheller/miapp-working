@@ -1,4 +1,4 @@
-<ion-content no-bounce has-bouncing="false" forceOverscroll="false">
+<ion-content scrollY="false">
   <ion-img class="logo" src="assets/logomiapplogin.png"></ion-img>
 
   <h4 class="signin-title">SIGN UP</h4>
@@ -13,6 +13,18 @@
         </ion-col>
         <ion-col>
           <ion-input [(ngModel)]="name" class="name" placeholder="Full Name">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="borders">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" ios="ios-person" md="md-person"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="name" class="name" placeholder="Username">
           </ion-input>
         </ion-col>
       </ion-row>

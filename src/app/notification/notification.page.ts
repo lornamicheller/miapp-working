@@ -17,69 +17,69 @@ export class NotificationPage implements OnInit {
   }
 
   goBack() {
-      let options: NativeTransitionOptions = {
-        duration: 100,
-        iosdelay: 100
-       }
-  
-      console.log(options);
-      this.nativePageTransitions.fade(options);
-      this.navigate.navigateRoot("/user-home");
-}
+    let options: NativeTransitionOptions = {
+      duration: 100,
+      iosdelay: 100
+    }
 
-goHome() {
-  let options: NativeTransitionOptions = {
-    duration: 100,
-    iosdelay: 100
-   }
+    console.log(options);
+    this.nativePageTransitions.fade(options);
+    this.navigate.navigateRoot("/user-home");
+  }
 
-  console.log(options);
-  this.nativePageTransitions.fade(options);
-  this.navigate.navigateRoot("/user-home");
-}
+  goHome() {
+    let options: NativeTransitionOptions = {
+      duration: 100,
+      iosdelay: 100
+    }
 
-async presentAlert() {
-  const alert=await this.alertController.create( {
-      header: 'Good!', message: 'Check-in complete. Jane Doe, remember to click "I have arrived" when you arrive to your appointment.', buttons: [ {
-          text: 'OK', handler: () => {
-              console.log('Confirm Cancel');
-              this.goHome();
-              this.navigate.navigateRoot('/checkin-profile');
-          }
+    console.log(options);
+    this.nativePageTransitions.fade(options);
+    this.navigate.navigateRoot("/user-home");
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Good!', message: 'Check-in complete. Jane Doe, remember to click "Arrived" when you arrive to your appointment.', buttons: [{
+        text: 'OK', handler: () => {
+          console.log('Confirm Cancel');
+          this.goHome();
+          this.navigate.navigateRoot('/checkin-profile');
+        }
       }
       ]
-  }
-  );
-  await alert.present();
-}
-
-  async arrivedAlert() {
-    const alert=await this.alertController.create( {
-        header: 'Good!', message: 'Jane Doe, thank you for letting us know that you have arrived to your appointment. Your doctor will be notified.', buttons: [ {
-            text: 'OK', handler: () => {
-                console.log('Confirm Cancel');
-                this.goHome();
-                this.navigate.navigateRoot("/user-home");
-            }
-        }
-        ]
     }
     );
     await alert.present();
-}
+  }
+
+  async arrivedAlert() {
+    const alert = await this.alertController.create({
+      header: 'Good!', message: 'Jane Doe, thank you for letting us know that you have arrived to your appointment. Your doctor will be notified.', buttons: [{
+        text: 'OK', handler: () => {
+          console.log('Confirm Cancel');
+          this.goHome();
+          this.navigate.navigateRoot("/user-home");
+        }
+      }
+      ]
+    }
+    );
+    await alert.present();
+  }
 
   async presentAlert2() {
-    const alert=await this.alertController.create( {
-        header: 'Jane Doe', message: 'Please confirm your appointment with Dr. John for September 7, 2019 at 9:30AM.', 
-        buttons: [ {
-            text: 'OK', 
-            handler: () => {
-                console.log('Confirm Cancel');
-                this.goHome();
-                this.navigate.navigateRoot("/user-home");
-            }
+    const alert = await this.alertController.create({
+      header: 'Jane Doe', message: 'Please confirm your appointment with Dr. John for September 7, 2019 at 9:30AM.',
+      buttons: [{
+        text: 'OK',
+        handler: () => {
+          console.log('Confirm Cancel');
+          this.goHome();
+          this.navigate.navigateRoot("/user-home");
         }
-        ]
+      }
+      ]
     }
     );
     await alert.present();
@@ -96,9 +96,9 @@ async presentAlert() {
           console.log('Confirm Cancel');
           this.goHome();
           this.navigate.navigateRoot("/user-home");
-      } 
+        }
       }]
-      
+
     });
 
     await alert.present();
@@ -106,15 +106,15 @@ async presentAlert() {
 
 
   async checkIn() {
-    const alert=await this.alertController.create( {
-        header: 'Good!', message: 'Check-in complete. Jane Doe, remember to click "I have arrived" when you arrive to your appointment.', buttons: [ {
-            text: 'OK', handler: () => {
-                console.log('Confirm Cancel');
-                this.goHome();
-                this.navigate.navigateRoot("/user-home");
-            }
+    const alert = await this.alertController.create({
+      header: 'Good!', message: 'Check-in complete. Jane Doe, remember to click "I have arrived" when you arrive to your appointment.', buttons: [{
+        text: 'OK', handler: () => {
+          console.log('Confirm Cancel');
+          this.goHome();
+          this.navigate.navigateRoot("/user-home");
         }
-        ]
+      }
+      ]
     }
     );
     await alert.present();
