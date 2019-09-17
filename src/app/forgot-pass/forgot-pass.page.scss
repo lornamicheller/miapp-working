@@ -1,0 +1,160 @@
+.main-bg {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  height: 100px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.doctors-title {
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding-top: 45px;
+  font-weight: 700;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+}
+
+.arrow {
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+}
+.bg {
+  --background: transparent;
+  height: auto;
+}
+
+.logo {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.logo-bell {
+  display: flex;
+  width: 100%;
+}
+
+.bell-btn {
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+}
+
+.bell-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.forgot-text {
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(107, 107, 107);
+  padding-top: 30px;
+}
+
+.text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.input-card {
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 30px;
+  box-shadow: none;
+}
+
+.borders {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+}
+
+// .input-card {
+//   margin: 0;
+//   padding: 0;
+//   margin-top: 30px;
+//   box-shadow: none;
+// }
+
+// .icon {
+//   width: 25px;
+//   height: 25px;
+//   padding-left: 10px;
+// }
+
+// .email {
+//   border: 1px solid rgb(202, 202, 202);
+//   border-radius: 20px;
+//   width: 320px;
+//   height: 45px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: 20px;
+//   --padding-start: 10px;
+//   font-weight: 700;
+// }
+
+.signin-btn {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: transparent;
+  --background-activated: transparent;
+  width: 320px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  --box-shadow: none;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.signup-btn {
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+  color: blue;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.signup-sec {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

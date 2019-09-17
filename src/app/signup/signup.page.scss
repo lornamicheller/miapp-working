@@ -1,0 +1,71 @@
+.logo {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.signin-title {
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+.input-card {
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 30px;
+  box-shadow: none;
+}
+
+.borders {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+}
+
+
+.signup-btn1,
+.facebook-btn {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: transparent;
+  --background-activated: transparent;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  --box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.signin-btn1 {
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+  color: blue;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.signup-sec {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

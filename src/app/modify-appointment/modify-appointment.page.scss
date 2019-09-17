@@ -1,0 +1,112 @@
+.main-bg {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  height: 100px;
+}
+
+.doctors-title {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding-top: 45px;
+  font-weight: 700;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 20;
+  width: 50px;
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+}
+
+.arrow {
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+}
+
+.avatar-size {
+  height: 130px;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.img-doc {
+  object-fit: contain;
+}
+
+.btn-position {
+  position: absolute;
+  top: 70px;
+  left: 40px;
+}
+
+.tel {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-color {
+  --background: #696969;
+  --background-activated: transparent;
+}
+
+.doctors-name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(46, 46, 46);
+  margin: 0;
+  margin-top: 20px;
+}
+
+.book-btn {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: transparent;
+  --background-activated: transparent;
+  width: 320px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  --box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.input {
+  border-bottom: 1px solid rgb(163, 163, 163);
+  --color: rgb(131, 131, 131);
+  font-weight: 700;
+  font-size: 13px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  --padding-start: 10px;
+  --background: white;
+  --background-activated: white;
+  text-align: left;
+  --padding-end: 200px;
+}
+
+.time-container {
+  // width: 200px;
+  // border-bottom: 1px solid rgb(133, 133, 133);
+  --color: rgb(131, 131, 131);
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  --padding-start: 10px;
+}

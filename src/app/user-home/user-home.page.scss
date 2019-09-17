@@ -1,0 +1,142 @@
+.main-bg {
+  margin: 0; 
+  border-radius: 0;
+  padding-top: 50px;
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  height: 110px;
+}
+
+.bg {
+  --background: transparent;
+  height: auto;
+}
+
+.logo {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  margin: 0;
+  border-radius: 0;
+  overflow: scroll;
+  box-shadow: none;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.logo-bell {
+  display: flex;
+  width: 100%;
+}
+
+.bell {
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+}
+
+.bell-btn {
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+}
+
+.bell-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.welcome {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.what-service {
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(150, 150, 150);
+}
+
+.book-app {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  // background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: #8397fc;
+  --background-activated: #8397fc;
+  border-radius: 25px;
+  height: 100px;
+}
+
+.view-app {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  // background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: #009bdf;
+  --background-activated: #009bdf;
+  border-radius: 25px;
+  height: 100px;
+}
+
+.manage-app {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  // background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: #9f009b;
+  --background-activated: #9f009b;
+  border-radius: 25px;
+  height: 100px;
+}
+
+.check-in {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  // background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: #5b66c2;
+  --background-activated: #5b66c2;
+  border-radius: 25px;
+  height: 100px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.text {
+  margin-top: 17px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.text-2 {
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+

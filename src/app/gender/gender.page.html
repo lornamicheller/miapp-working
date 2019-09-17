@@ -1,0 +1,36 @@
+<ion-header class="top">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <!-- <ion-button (click)="goBack()" class="arrow-btn">
+          <ion-icon class="arrow-icon" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+        </ion-button> -->
+
+        <ion-back-button class="arrow-btn" text="" defaultHref="/signup"></ion-back-button>
+      </ion-col>
+      <ion-col size="8">
+        <p class="create-title">Create Account</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button routerLink="/birthday" expand="block" class="skip-title">Skip</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  <ion-card style="box-shadow: none; margin-top: 30px;">
+    <ion-item>
+      <ion-label class="health-title">GENDER</ion-label>
+      <ion-select [(ngModel)]="gender"  [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="">
+        <ion-select-option>FEMALE</ion-select-option>
+        <ion-select-option>MALE</ion-select-option>
+        <ion-select-option>OTHER</ion-select-option>
+        <ion-select-option>UNDISCLOSED</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button routerLink="/birthday" class="next-btn" expand="block">NEXT</ion-button>
+
+  </ion-card>
+</ion-content>

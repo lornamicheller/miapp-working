@@ -1,0 +1,90 @@
+<div class="main-bg">
+  <p class="doctors-title">Appointments</p>
+</div>
+
+<!-- <ion-button class="arrow-btn" (click)="goBack()">
+  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+</ion-button> -->
+<ion-back-button class="arrow-btn" text="" defaultHref="/doctors-profile"></ion-back-button>
+
+<!-- <ion-back-button class="arrow-btn" text="" defaultHref="/doctors-profile"></ion-back-button> -->
+
+
+<ion-content>
+  <ion-avatar class="avatar-size">
+    <ion-img class="image-doc" src="assets/happydoctor.jpg"></ion-img>
+  </ion-avatar>
+
+  <ion-fab class="btn-position">
+    <ion-fab-button size="small" class="btn-color">
+      <ion-icon ios="ios-call" md="md-call"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <p class="doctors-name">John Smith</p>
+
+  <ion-button expand="full" class="input" readonly [(ngModel)]="mydate" (click)="openDatePicker()">CHOOSE DATE</ion-button>
+
+  
+  <!-- <ion-item class="time-container">
+    <ion-label>CHOOSE TIME</ion-label>
+    <ion-datetime displayFormat="hh:mm A" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item> -->
+
+  <ion-item style="width: 317px; margin-left: auto; margin-right: auto;">
+    <ion-label class="time-container">CHOOSE TIME</ion-label>
+    <ion-select [interfaceOptions]="customPopoverOptions" interface="popover">
+      <ion-select-option>10:00AM</ion-select-option>
+      <ion-select-option>10:30AM</ion-select-option>
+      <ion-select-option>11:00AM</ion-select-option>
+      <ion-select-option>11:30AM</ion-select-option>
+      <ion-select-option>12:00PM</ion-select-option>
+      <ion-select-option>12:30PM</ion-select-option>
+      <ion-select-option>1:00PM</ion-select-option>
+      <ion-select-option>1:30PM</ion-select-option>
+      <ion-select-option>2:00PM</ion-select-option>
+      <ion-select-option>2:30PM</ion-select-option>
+      <ion-select-option>3:00PM</ion-select-option>
+      <ion-select-option>3:30PM</ion-select-option>
+      <ion-select-option>4:00PM</ion-select-option>
+      <ion-select-option>4:30PM</ion-select-option>
+      <ion-select-option>5:00PM</ion-select-option>
+      <ion-select-option>5:30PM</ion-select-option>
+      <ion-select-option>6:00PM</ion-select-option>
+      <ion-select-option>6:30PM</ion-select-option>
+      <ion-select-option>7:00PM</ion-select-option>
+      <ion-select-option>7:30PM</ion-select-option>
+      <ion-select-option>8:00PM</ion-select-option>
+      <ion-select-option>8:30PM</ion-select-option>
+      <ion-select-option>9:00PM</ion-select-option>
+      <ion-select-option>9:30PM</ion-select-option>
+      <ion-select-option>10:00PM</ion-select-option>
+      <ion-select-option>10:30PM</ion-select-option>
+      <ion-select-option>11:00PM</ion-select-option>
+      <ion-select-option>11:30PM</ion-select-option>
+      <ion-select-option>12:00AM</ion-select-option>
+      <ion-select-option>12:30AM</ion-select-option>
+      <ion-select-option>1:00AM</ion-select-option>
+      <ion-select-option>1:30AM</ion-select-option>
+      <ion-select-option>2:00AM</ion-select-option>
+      <ion-select-option>2:30AM</ion-select-option>
+      <ion-select-option>3:00AM</ion-select-option>
+      <ion-select-option>3:30AM</ion-select-option>
+      <ion-select-option>4:00AM</ion-select-option>
+      <ion-select-option>4:30AM</ion-select-option>
+      <ion-select-option>5:00AM</ion-select-option>
+      <ion-select-option>5:30AM</ion-select-option>
+      <ion-select-option>6:00AM</ion-select-option>
+      <ion-select-option>6:30AM</ion-select-option>
+      <ion-select-option>7:00AM</ion-select-option>
+      <ion-select-option>7:30AM</ion-select-option>
+      <ion-select-option>8:00AM</ion-select-option>
+      <ion-select-option>8:30AM</ion-select-option>
+      <ion-select-option>9:00AM</ion-select-option>
+      <ion-select-option>9:30AM</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+
+  <ion-button class="book-btn" (click)="presentAlert()" expand="block">BOOK NOW</ion-button>
+</ion-content>

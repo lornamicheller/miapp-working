@@ -1,0 +1,65 @@
+<ion-content no-bounce has-bouncing="false" forceOverscroll="false">
+  <ion-img class="logo" src="assets/logomiapplogin.png"></ion-img>
+
+  <h4 class="signin-title">SIGN UP</h4>
+
+  <ion-card class="input-card">
+
+
+    <ion-grid class="borders">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" ios="ios-person" md="md-person"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="name" class="name" placeholder="Full Name">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="borders">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" ios="ios-unlock" md="md-unlock"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="password" class="password" placeholder="Password">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="borders">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" ios="ios-unlock" md="md-unlock"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="confirmPassword" class="confirm-password" placeholder="Confirm Password">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="borders">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" ios="ios-mail" md="md-mail"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="email" class="email" placeholder="Email">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button (click)="openPage()" class="signup-btn1" expand="block">SIGN UP</ion-button>
+    <ion-button class="facebook-btn" expand="block">SIGN UP WITH FACEBOOK</ion-button>
+  </ion-card>
+
+  <ion-card style="box-shadow: none; margin-bottom: 0; margin-top: 5px;">
+    <p routerLink="/signin" class="signup-sec">Have an account?<ion-button class="signin-btn1">SIGN IN</ion-button>
+    </p>
+  </ion-card>
+</ion-content>

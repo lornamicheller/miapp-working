@@ -1,0 +1,73 @@
+<div class="main-bg">
+  <p class="doctors-title">Check-in</p>
+</div>
+
+<!-- <ion-button class="arrow-btn" (click)="goBack()">
+  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+</ion-button> -->
+
+<ion-back-button class="arrow-btn" text="" defaultHref="/check-in"></ion-back-button>
+
+
+<ion-content>
+  <ion-card style="box-shadow: none;">
+    <ion-avatar class="avatar-size">
+      <ion-img class="image-doc" src="assets/happydoctor.jpg"></ion-img>
+    </ion-avatar>
+
+    <ion-fab class="btn-position">
+      <ion-fab-button size="small" class="btn-color">
+        <ion-icon ios="ios-call" md="md-call"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <p class="doctors-name">John Smith</p>
+    <p class="doctors-specialty">Cardiologist</p>
+    <p class="doc-reviews">
+      <ion-icon class="star" name="star-outline"></ion-icon>5.0 <span class="total-reviews">(234 reviewer)</span>
+    </p>
+
+    <ion-card style="margin-left: 20px; margin-right: 20px; padding-top: 10px; padding-bottom: 10px;">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1" class="icon">
+            <ion-icon ios="ios-person" md="md-person"></ion-icon>
+          </ion-col>
+          <ion-col size="10" class="title">
+            <p style="margin: 0; padding: 0; margin-left: 10px; font-size: 13px;"><span
+                style="color: black; font-weight: 700;">4 people</span> ahead of you</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card style="margin-left: 20px; margin-right: 20px; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1" class="icon">
+            <ion-icon ios="ios-time" md="md-time"></ion-icon>
+          </ion-col>
+          <ion-col size="10" class="title">
+            <p style="margin: 0; padding: 0; margin-left: 10px; font-size: 13px;">Estimated wait time:
+              <span style="color: black; font-weight: 700;">1 hour</span>
+              <span style="color: black; font-weight: 700;"> 45 mins</span>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-button (click)="presentAlert()" class="confirm-btn" expand="block">ARRIVED (In-office)</ion-button>
+
+    <ion-button (click)="openPage4()" class="confirm-btn" expand="block">I'M LATE</ion-button>
+
+    <ion-button (click)="presentAlertConfirm()" class="confirm-btn" expand="block">CANCEL</ion-button>
+
+<ion-card ion-button routerLink="/user-home" class="go-btn">
+    <img  src="assets/stetho.png" width="40px" height="40px" style="object-fit: contain; margin-top: 20px;">
+</ion-card>
+
+    <!-- <img ion-button class="go-btn" (click)="openPage3()" src="assets/stetho.png" width="40px" height="40px" style="object-fit: contain;"> -->
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,48 @@
+<div class="main-bg">
+  <p class="doctors-title">Choose your delay time</p>
+</div>
+
+<ion-button class="arrow-btn" (click)="goBack()">
+  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+</ion-button>
+
+<ion-content>
+
+  <ion-card style="box-shadow: none;">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          <ion-checkbox color="primary"></ion-checkbox>
+        </ion-col>
+        <ion-col class="right-col" size="10">
+          15 MINUTES
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          <ion-checkbox color="primary"></ion-checkbox>
+        </ion-col>
+        <ion-col class="right-col" size="10">
+          30 MINUTES
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          <ion-checkbox color="primary"></ion-checkbox>
+        </ion-col>
+        <ion-col class="right-col" size="10">
+          1 HOUR
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <ion-button (click)="presentAlert()" class="confirm-btn" expand="full">DONE</ion-button>
+
+</ion-content>

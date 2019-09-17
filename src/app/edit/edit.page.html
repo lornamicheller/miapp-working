@@ -1,0 +1,27 @@
+<div class="main-bg">
+  <p class="doctors-title">Doctors</p>
+</div>
+
+<ion-button class="arrow-btn" (click)="goBack()">
+  <ion-icon style="color: white;" class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+</ion-button>
+
+<ion-content>
+  <ion-card class="avatar-card">
+    <ion-button expand="full" class="camera-btn">
+      <ion-avatar class="doctor-img">
+        <ion-img src="assets/girl.png"></ion-img>
+      </ion-avatar>
+    </ion-button>
+  </ion-card>
+
+  <ion-card class="info-forms">
+    <ion-input class="name" placeholder="Nombre"></ion-input>
+    <ion-input class="last-name" placeholder="Apellidos"></ion-input>
+    <ion-input class="phone-number" placeholder="Teléfono"></ion-input>
+    <ion-input class="email" placeholder="Correo Electrónico"></ion-input>
+    <ion-input class="password" placeholder="Contraseña"></ion-input>
+  </ion-card>
+
+  <ion-button class="next-btn" (click)="goBack()" expand="full">SAVE</ion-button>
+</ion-content>

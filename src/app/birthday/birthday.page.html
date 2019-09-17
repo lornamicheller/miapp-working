@@ -1,0 +1,34 @@
+<ion-header class="top">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <!-- <ion-button class="arrow-btn">
+          <ion-icon class="arrow-icon" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+        </ion-button> -->
+
+        <ion-back-button class="arrow-btn" text="" defaultHref="/gender"></ion-back-button>
+
+      </ion-col>
+      <ion-col size="8">
+        <p class="create-title">Create Account</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="openPage()" expand="block" class="skip-title">Skip</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  <ion-card style="box-shadow: none; margin-top: 30px;">
+    <ion-item class="lines">
+      <ion-label class="date-format">BIRTHDAY</ion-label>
+      <ion-datetime  [(ngModel)]="bday" class="date-number" display-format="MMM DD, YYYY"></ion-datetime>
+      <ion-button class="btn">
+        <ion-icon class="arrow-color" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-button (click)="openPage()" class="next-btn" expand="block">NEXT</ion-button>
+    {{bday}}
+  </ion-card>
+</ion-content>

@@ -1,0 +1,73 @@
+.main-bg {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  height: 100px;
+}
+
+.doctors-title {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding-top: 45px;
+  font-weight: 700;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+}
+
+.arrow {
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+}
+
+.doctors {
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(114, 114, 114);
+}
+
+.doctors-card {
+  color: grey;
+  font-weight: 400;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.doctor-img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.doctor-info {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.checkin-btn {
+  background-image: linear-gradient(to right, #575af3, #5f69f6, #6878f9, #7285fb, #7e93fc);
+  box-shadow: 0 8px 6px -6px black;
+  --background: transparent;
+  --background-activated: transparent;
+  width: 150px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  --box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

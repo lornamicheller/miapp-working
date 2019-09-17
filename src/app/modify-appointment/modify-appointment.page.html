@@ -1,0 +1,42 @@
+<div class="main-bg">
+    <p class="doctors-title">Appointments</p>
+  </div>
+  
+  <ion-button class="arrow-btn" (click)="goBack()">
+    <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+  </ion-button>
+  
+  <ion-content>
+    <ion-avatar class="avatar-size">
+      <ion-img class="image-doc" src="assets/happydoctor.jpg"></ion-img>
+    </ion-avatar>
+  
+    <ion-fab class="btn-position">
+      <ion-fab-button size="small" class="btn-color">
+        <ion-icon ios="ios-call" md="md-call"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
+    <p class="doctors-name">John Smith</p>
+  
+    <ion-button expand="full" class="input" readonly [(ngModel)]="mydate" (click)="openDatePicker()">CHOOSE DATE</ion-button>
+  
+    
+    <!-- <ion-item class="time-container">
+      <ion-label>CHOOSE TIME</ion-label>
+      <ion-datetime displayFormat="hh:mm A" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item> -->
+  
+    <ion-item style="width: 317px; margin-left: auto; margin-right: auto;">
+      <ion-label class="time-container">CHOOSE TIME</ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover">
+        <ion-select-option>10:00AM - 10:30AM</ion-select-option>
+        <ion-select-option>10:30AM - 11:00AM</ion-select-option>
+        <ion-select-option>11:00AM - 11:30AM</ion-select-option>
+        <ion-select-option>11:30AM - 12:00PM</ion-select-option>
+        <ion-select-option>12:00PM - 12:30PM</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-button class="book-btn" (click)="presentAlert()" expand="block">BOOK NOW</ion-button>
+  </ion-content>

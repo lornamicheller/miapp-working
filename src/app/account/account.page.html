@@ -1,0 +1,34 @@
+<div class="main-bg">
+  <p class="doctors-title">Profile</p>
+</div>
+
+<!-- <ion-button class="arrow-btn" (click)="goBack()">
+  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+</ion-button> -->
+
+<ion-back-button class="arrow-btn" text="" defaultHref="/home-user"></ion-back-button>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-avatar>
+          <ion-img class="profile-img" src="assets/girl.png"></ion-img>
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="10">
+      <ion-button (click)="openPage2()" class="edit-btn">EDIT</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <p class="profile-name">MELANIE ALMEIDA</p>
+  <ion-button expand="block" class="links">FIND</ion-button>
+  <ion-button expand="block" class="links-2">TERMS AND CONDITIONS</ion-button>
+  <ion-button expand="block" class="links-3">WEBSITE</ion-button>
+
+</ion-content>
+
+<ion-button (click)="logout()" expand="expand" class="btn-logout">LOGOUT</ion-button>

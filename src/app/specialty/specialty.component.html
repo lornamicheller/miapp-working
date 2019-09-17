@@ -1,0 +1,108 @@
+<div class="main-bg">
+    <!-- <p class="profile-title">Profile Picture</p> -->
+  </div>
+  
+  <!-- <ion-button class="arrow-btn" (click)="goBack()">
+    <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+  </ion-button> -->
+  
+  <ion-back-button class="arrow-btn" text="" defaultHref="/user-home"></ion-back-button>
+  
+  <ion-card class="specialty">
+    <p style="text-align: center;">Health and Wellness Providers</p>
+  </ion-card>
+  
+  <ion-content>
+      <ion-item (click)="closeModal()">
+        <ion-label>Acupuncture</ion-label>
+      </ion-item>
+        <!-- <ion-select-option>Acupuncture</ion-select-option>
+        <ion-select-option>Allergy</ion-select-option>
+        <ion-select-option>Allergy and Immunology</ion-select-option>
+        <ion-select-option>Pediatric Allergy and Immunology</ion-select-option>
+        <ion-select-option>Anesthesia</ion-select-option>
+        <ion-select-option>Audiology</ion-select-option>
+        <ion-select-option>Cardiology</ion-select-option>
+        <ion-select-option>Interventional Cardiology</ion-select-option>
+        <ion-select-option>Pediatric Cardiology</ion-select-option>
+        <ion-select-option>Head and Neck Surgery</ion-select-option>
+        <ion-select-option>Back Surgery</ion-select-option>
+        <ion-select-option>Burns Surgery</ion-select-option>
+        <ion-select-option>General Surgery</ion-select-option>
+        <ion-select-option>Mohs Micrographic Surgery</ion-select-option>
+        <ion-select-option>Surgery or Peripheral Vascular Illness</ion-select-option>
+        <ion-select-option>Oncological Surgery</ion-select-option>
+        <ion-select-option>Oral Surgery</ion-select-option>
+        <ion-select-option>Orthopedic Surgery</ion-select-option>
+        <ion-select-option>Pediatric Surgery</ion-select-option>
+        <ion-select-option>Plastic Surgery</ion-select-option>
+        <ion-select-option>Hands Plastic Surgery</ion-select-option>
+        <ion-select-option>Thoracic Surgery</ion-select-option>
+        <ion-select-option>Pediatric Critical Care</ion-select-option>
+        <ion-select-option>Dentist</ion-select-option>
+        <ion-select-option>Pediatric Dentist</ion-select-option>
+        <ion-select-option>Dermatology</ion-select-option>
+        <ion-select-option>Endocrinology</ion-select-option>
+        <ion-select-option>Pediatric Endocrinology</ion-select-option>
+        <ion-select-option>Endodontics</ion-select-option>
+        <ion-select-option>Physiatry</ion-select-option>
+        <ion-select-option>Pediatric Physiatry</ion-select-option>
+        <ion-select-option>Physiatry and Rehabilitation</ion-select-option>
+        <ion-select-option>Spinal Cord Physiatry and Rehabilitation</ion-select-option>
+        <ion-select-option>Gastroenterology</ion-select-option>
+        <ion-select-option>Pediatric Gastroenterology</ion-select-option>
+        <ion-select-option>General Practitioner</ion-select-option>
+        <ion-select-option>Geriatrics</ion-select-option>
+        <ion-select-option>Gynecology</ion-select-option>
+        <ion-select-option>Oncologic Gynecology</ion-select-option>
+        <ion-select-option>Glaucoma</ion-select-option>
+        <ion-select-option>Hematology</ion-select-option>
+        <ion-select-option>Pediatric Hematology and Oncology</ion-select-option>
+        <ion-select-option>Oncology Hematology</ion-select-option>
+        <ion-select-option>Laboratories</ion-select-option>
+        <ion-select-option>Pain Management</ion-select-option>
+        <ion-select-option>Maxilofacial</ion-select-option>
+        <ion-select-option>Critical Care Medicine</ion-select-option>
+        <ion-select-option>Family Medicine</ion-select-option>
+        <ion-select-option>Sports Medicine</ion-select-option>
+        <ion-select-option>General Medicine</ion-select-option>
+        <ion-select-option>Internal Medicine</ion-select-option>
+        <ion-select-option>Neonatal and Perinatal Medicine</ion-select-option>
+        <ion-select-option>Nuclear Medicine</ion-select-option>
+        <ion-select-option>Occupational Medicine</ion-select-option>
+        <ion-select-option>Nephrology</ion-select-option>
+        <ion-select-option>Pneumology</ion-select-option>
+        <ion-select-option>Pediatric Pneumology</ion-select-option>
+        <ion-select-option>Neurosurgery</ion-select-option>
+        <ion-select-option>Neurophysiology</ion-select-option>
+        <ion-select-option>Neuroophtalmology</ion-select-option>
+        <ion-select-option>Neurology</ion-select-option>
+        <ion-select-option>Pediatric Neurology</ion-select-option>
+        <ion-select-option>Nutrition</ion-select-option>
+        <ion-select-option>Obstetric and gynecology</ion-select-option>
+        <ion-select-option>Pediatric Odontology</ion-select-option>
+        <ion-select-option>Orthodontics</ion-select-option>
+        <ion-select-option>Ophthalmology</ion-select-option>
+        <ion-select-option>Ear Nose and Throat</ion-select-option>
+        <ion-select-option>Oncology</ion-select-option>
+        <ion-select-option>Optometry</ion-select-option>
+        <ion-select-option>Orthopedics</ion-select-option>
+        <ion-select-option>Pediatric Orthopedics</ion-select-option>
+        <ion-select-option>Pediatry</ion-select-option>
+        <ion-select-option>Periodontics</ion-select-option>
+        <ion-select-option>Podiatrics</ion-select-option>
+        <ion-select-option>Proctology</ion-select-option>
+        <ion-select-option>Prosthodontics</ion-select-option>
+        <ion-select-option>Psychology</ion-select-option>
+        <ion-select-option>Psychiatric</ion-select-option>
+        <ion-select-option>Pediatric Psychiatrics</ion-select-option>
+        <ion-select-option>Geriatric Psychiatrics</ion-select-option>
+        <ion-select-option>Chiropractic</ion-select-option>
+        <ion-select-option>Radiology</ion-select-option>
+        <ion-select-option>Retinology</ion-select-option>
+        <ion-select-option>Physical Therapy</ion-select-option>
+        <ion-select-option>Urology</ion-select-option>
+        <ion-select-option>Pediatric Urology</ion-select-option> -->
+
+  
+  </ion-content>

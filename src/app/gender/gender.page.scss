@@ -1,0 +1,66 @@
+.top {
+  padding-top: 30px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgb(54, 54, 54);
+  height: 20px;
+  width: 20px;
+}
+
+.arrow {
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+}
+
+.create-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(54, 54, 54);
+}
+
+.skip-title {
+  text-align: right;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: blue;
+  --padding-end: 10px;
+  --background: transparent;
+  --background-activated: transparent;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.next-btn {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: transparent;
+  --background-activated: transparent;
+  width: 320px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  --box-shadow: none;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.health-title {
+  color: grey;
+  font-weight: 800;
+  font-size: 13px;
+}

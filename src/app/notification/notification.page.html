@@ -1,0 +1,88 @@
+<div class="main-bg">
+  <p class="doctors-title">Notifications</p>
+</div>
+
+<ion-button class="arrow-btn" (click)="goBack()">
+  <ion-icon class="arrow" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+</ion-button>
+
+<ion-content>
+  <ion-card class="doctors-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="avatar-img" size="3">
+          <ion-avatar class="doctor-img">
+            <ion-img src="assets/happydoctor.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="doc-info" size="9">
+          <p
+            style="margin-left: 5px; margin-top: 20px; margin-bottom: 0; padding-bottom: 0; font-weight: 700; color: rgb(32, 32, 32); font-size: 13px;">
+            Dr. John has <span>4 </span> people ahead of you.</p>
+          <p
+            style="margin-left: 5px; margin-top: 5px; padding-top: 0; font-weight: 700; color: rgb(32, 32, 32); font-size: 13px;">
+            Estimated wait time: <span>1 hour</span><span> 45 mins</span></p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button (click)="confirmLate()" class="confirm-btn" expand="block">I'M LATE</ion-button>
+  </ion-card>
+
+  <ion-card class="doctors-card">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="avatar-img" size="3">
+            <ion-avatar class="doctor-img">
+              <ion-img src="assets/happydoctor.jpg"></ion-img>
+            </ion-avatar>
+          </ion-col>
+          <ion-col class="doc-info" size="9">
+            <p
+              style="margin-left: 5px; margin-top: 20px; margin-bottom: 0; padding-bottom: 0; font-weight: 700; color: rgb(32, 32, 32); font-size: 13px;">
+             Remember to "click" arrived when you get to Dr. John's office.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-button class="confirm-btn" (click)="arrivedAlert()" expand="block">ARRIVED</ion-button>
+    </ion-card>
+
+  <ion-card class="doctors-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="avatar-img" size="3">
+          <ion-avatar class="doctor-img">
+            <ion-img src="assets/happydoctor.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="doc-info" size="9">
+          <p
+            style="margin-left: 5px; margin-top: 20px; margin-bottom: 0; padding-bottom: 0; font-weight: 700; color: rgb(32, 32, 32); font-size: 13px;">
+            Dr. John <span class="office-status">has opened the wait list. Jane Doe, please now select “Check-in” to sign
+              into your appointment and receive your estimated wait time.</span></p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button class="confirm-btn" (click)="presentAlert()" expand="block">CHECK-IN</ion-button>
+  </ion-card>
+
+  <ion-card class="doctors-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="avatar-img" size="3">
+          <ion-avatar class="doctor-img">
+            <ion-img src="assets/happydoctor.jpg"></ion-img>
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="doc-info" size="9">
+          <p
+            style="margin-left: 5px; margin-top: 20px; margin-bottom: 0; padding-bottom: 0; font-weight: 700; color: rgb(32, 32, 32); font-size: 13px;">
+            Dr. John:</p>
+          <p
+            style="margin-left: 5px; margin-top: 5px; padding-top: 0; font-weight: 700; color: rgb(32, 32, 32); font-size: 13px;">
+            Jane Doe, please confirm your appointment with Dr. John.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button class="confirm-btn" (click)="presentAlert2()" expand="block">CONFIRM</ion-button>
+  </ion-card>
+</ion-content>

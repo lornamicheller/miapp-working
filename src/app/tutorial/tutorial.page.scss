@@ -1,0 +1,42 @@
+.circle-img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.tutorial-first-card {
+  box-shadow: none;
+}
+
+.title-service {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.service-info {
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+
+.signin-btn {
+  background-image: linear-gradient(to right, #93278f, #7c55b7, #5976d1, #3392df, #29abe2);
+  box-shadow: 0 8px 6px -6px black;
+  --background: transparent;
+  --background-activated: transparent;
+  width: 320px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  --box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
