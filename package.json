@@ -45,7 +45,7 @@
     "cordova-wheel-selector-plugin": "^1.1.2",
     "core-js": "^2.5.4",
     "ionic-calendar-date-picker": "^0.1.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "parse": "^2.4.0",
     "promise-polyfill": "^8.1.0",
     "rxjs": "^6.4.0",
